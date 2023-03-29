@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Icon from '~/components/icon.svelte';
+</script>
+
+<ion-item>
+	<Icon name="add" size="l" color="primary" start />
+	<ion-label> あいうえ </ion-label>
+</ion-item>
