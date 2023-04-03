@@ -4,5 +4,5 @@
 
 <ion-item>
 	<Icon name="add" size="l" color="primary" start />
-	<ion-label> あいうえ </ion-label>
+	<ion-label />
 </ion-item>
