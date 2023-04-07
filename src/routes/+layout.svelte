@@ -16,7 +16,7 @@
 	<ion-app>
 		<ion-header>
 			<ion-toolbar>
-				<ion-title>Header</ion-title>
+				<ion-title />
 			</ion-toolbar>
 		</ion-header>
 		<ion-content>
@@ -24,7 +24,7 @@
 		</ion-content>
 		<ion-footer>
 			<ion-toolbar>
-				<ion-title>Footer</ion-title>
+				<ion-title />
 			</ion-toolbar>
 		</ion-footer>
 	</ion-app>
