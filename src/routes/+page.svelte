@@ -15,3 +15,7 @@
 	<Icon name="add" size="l" color="primary" end />
 	<ion-label />
 </ion-item>
+<ion-item>
+	<ion-textarea />
+	<Icon name="add" size="l" color="primary" end />
+</ion-item>
