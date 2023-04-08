@@ -11,6 +11,7 @@
 	<Icon name="add" size="l" color="primary" start />
 	<ion-label />
 </ion-item>
+
 <ion-item on:click={post}>
 	<Icon name="add" size="l" color="primary" end />
 	<ion-label />
