@@ -2,20 +2,23 @@
 	import Icon from '~/components/icon.svelte';
 	import { postCompletion } from '~/lib/api';
 
-	const post = () => {
-		postCompletion('おはよう！');
+	let message: string | null | undefined = '';
+	let resultMessage: string | undefined;
+	const post = async () => {
+		if (message) {
+			const result = await postCompletion(message);
+			resultMessage = result.message;
+		}
 	};
 </script>
 
 <ion-item>
-	<Icon name="add" size="l" color="primary" start />
-	<ion-label />
-</ion-item>
-<ion-item on:click={post}>
+	<ion-textarea on:ionChange={(e) => (message = e.detail.value)} />
 	<Icon name="add" size="l" color="primary" end />
-	<ion-label />
 </ion-item>
+<ion-item on:click={post}> POST </ion-item>
 <ion-item>
-	<ion-textarea />
-	<Icon name="add" size="l" color="primary" end />
+	<ion-label>
+		{resultMessage}
+	</ion-label>
 </ion-item>
