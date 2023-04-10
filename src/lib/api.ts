@@ -11,6 +11,6 @@ export async function postCompletion(message: string) {
 		throw new Error('Failed to post completion');
 	}
 
-	const result = await response.json();
+	const result: { message: string } = await response.json();
 	return result;
 }
