@@ -17,7 +17,6 @@
 	<Icon name="add" size="l" color="primary" end />
 </ion-item>
 <ion-item on:click={post}> POST </ion-item>
-
 <ion-item>
 	<ion-label>
 		{resultMessage}
